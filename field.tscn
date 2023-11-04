@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8xg187it1se5"]
+
+[ext_resource type="Texture2D" uid="uid://bide0wc5x47ja" path="res://empty.png" id="1_c1r6w"]
+[ext_resource type="Script" path="res://field.gd" id="2_vhb1q"]
+
+[node name="Field" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("1_c1r6w")
+script = ExtResource("2_vhb1q")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
